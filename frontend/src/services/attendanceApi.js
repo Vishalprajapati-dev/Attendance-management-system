@@ -1,5 +1,5 @@
 const API_BASE_URL =
-  "http://localhost:5000/api/attendance";
+  "https://attendance-management-system-nca7.onrender.com";
 
 // ==========================================
 // Get Token

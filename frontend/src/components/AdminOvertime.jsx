@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_URL = "http://localhost:5000/api/overtime";
+const API_URL = "https://attendance-management-system-nca7.onrender.com/api/overtime";
 
 const AdminOvertime = ({ onLogout }) => {
   const [requests, setRequests] = useState([]);

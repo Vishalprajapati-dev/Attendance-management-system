@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "http://localhost:5000/api/auth/register";
+const API_URL = "https://attendance-management-system-nca7.onrender.com/api/auth/register";
 
 function Register({ onRegisterSuccess, onGoToLogin }) {
     const [name, setName] = useState("");
@@ -54,7 +54,7 @@ function Register({ onRegisterSuccess, onGoToLogin }) {
 
             // 2. AUTOMATIC LOGIN AFTER REGISTRATION
             const loginResponse = await fetch(
-                "http://localhost:5000/api/auth/login",
+                "https://attendance-management-system-nca7.onrender.com/api/auth/login",
                 {
                     method: "POST",
                     headers: {

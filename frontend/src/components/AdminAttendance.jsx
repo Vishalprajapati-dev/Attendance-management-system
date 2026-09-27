@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_URL = "http://localhost:5000/api/attendance";
+const API_URL = "https://attendance-management-system-nca7.onrender.com/api/attendance";
 
 const AdminAttendance = ({ onLogout }) => {
   const [attendance, setAttendance] = useState([]);

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "http://localhost:5000/api/auth/login";
+const API_URL = "https://attendance-management-system-nca7.onrender.com/api/auth/login";
 
 function Login({ onLogin, onGoToRegister }) {
   const [email, setEmail] = useState("");
