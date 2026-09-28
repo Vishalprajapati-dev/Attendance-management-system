@@ -53,7 +53,7 @@ const attendanceRequest = async (
 // ==========================================
 
 export const getMyAttendance = async () => {
-  return attendanceRequest("/my", {
+  return attendanceRequest("/api/attendance/my", {
     method: "GET",
   });
 };
@@ -68,7 +68,7 @@ export const markAttendance = async ({
   selfie,
   location,
 }) => {
-  return attendanceRequest("/mark", {
+  return attendanceRequest("/api/attendance/mark", {
     method: "POST",
 
     body: JSON.stringify({
@@ -89,7 +89,7 @@ export const checkoutAttendance = async ({
   selfie,
   location,
 }) => {
-  return attendanceRequest("/checkout", {
+  return attendanceRequest("/api/attendance/checkout", {
     method: "POST",
 
     body: JSON.stringify({
@@ -105,7 +105,7 @@ export const checkoutAttendance = async ({
 // ==========================================
 
 export const getAllAttendance = async () => {
-  return attendanceRequest("/all", {
+  return attendanceRequest("/api/attendance/all", {
     method: "GET",
   });
 };
@@ -120,7 +120,7 @@ export const verifyAttendance = async ({
   remarks,
 }) => {
   return attendanceRequest(
-    `/${attendanceId}/verify`,
+  `/api/attendance/${attendanceId}/verify`,
     {
       method: "PATCH",
 
